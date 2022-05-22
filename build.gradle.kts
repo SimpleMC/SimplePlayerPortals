@@ -67,18 +67,17 @@ java {
 
 repositories {
     mavenCentral()
-    maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
-    maven("https://oss.sonatype.org/content/repositories/snapshots")
+    maven("https://repo.papermc.io/repository/maven-public/")
 }
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    compileOnly(group = "org.spigotmc", name = "spigot-api", version = "$mcApiVersion+")
+    compileOnly(group = "io.papermc.paper", name = "paper-api", version = "$mcApiVersion+")
 }
 
 tasks {
     wrapper {
-        gradleVersion = "7.4.1"
+        gradleVersion = "7.4.2"
         distributionType = Wrapper.DistributionType.ALL
     }
 

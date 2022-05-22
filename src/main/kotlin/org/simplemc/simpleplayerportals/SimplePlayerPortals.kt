@@ -1,11 +1,11 @@
-package org.simplemc.plugintemplate
+package org.simplemc.simpleplayerportals
 
 import org.bukkit.plugin.java.JavaPlugin
 
 /**
  * KotlinPluginTemplate plugin
  */
-class KotlinPluginTemplate : JavaPlugin() {
+class SimplePlayerPortals : JavaPlugin() {
 
     override fun onEnable() {
         // ensure config file exists
