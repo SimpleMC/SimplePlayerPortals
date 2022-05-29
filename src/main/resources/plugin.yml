@@ -4,5 +4,12 @@ version: "${version}"
 api-version: "${apiVersion}"
 website: https://github.com/SimpleMC/SimplePlayerPortals
 author: tajobe
+permissions:
+  simpleplayerportals.create:
+    description: Allows creating portals
+  simpleplayerportals.manage:
+    description: Allows managing portals and channels, including modifying private portal channels
+    children:
+      simpleplayerportals.create: true
 libraries:
   - org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}
